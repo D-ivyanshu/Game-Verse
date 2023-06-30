@@ -17,7 +17,6 @@ export interface Game {
   parent_platforms: { platform: Platform }[];
   metacritic: number;
 }
- 
 
 const useGames = (selectedGenre: Genre | null) => {
   return useData<Game>('/games', { params: { genres: selectedGenre?.id}}, [selectedGenre?.id]);

@@ -1,10 +1,7 @@
-import React, { useEffect, useState } from "react";
-import apiClient from "../services/api-client";
-import { SimpleGrid, Skeleton, Text } from "@chakra-ui/react";
+import { SimpleGrid, Text } from "@chakra-ui/react";
 import GameCard from "./GameCard";
 import useGames from "../hooks/useGames";
 import GameCardSkeleton from "./GameCardSkeleton";
-import useData from "../hooks/useData";
 import { Genre } from "../hooks/useGenres";
 
 interface Props {
